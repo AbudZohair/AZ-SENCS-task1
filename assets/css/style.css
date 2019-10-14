@@ -431,6 +431,16 @@ h3{
 * Categories Selections
 */
 
+/**
+*Loading
+*/
+#loading{
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
 .categories-btns{
     width: 40%;
     margin: 70px auto; 
