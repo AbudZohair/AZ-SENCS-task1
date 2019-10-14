@@ -82,35 +82,44 @@ const navLinks = document.querySelector('.nav-links');
 navLinks.addEventListener('click', sortProducts)
  Categories.addEventListener('click', sortProducts );
  
-
  function sortProducts (e){
         // e.preventDefault();
        all.forEach(product =>{
-           product.classList.remove('display');
-       })
-       if(e.target.classList.contains('btn-men')){
-           women.forEach(product =>{
-               product.classList.add('display');
-           })
-           kids.forEach(product =>{
-               product.classList.add('display');
-           })
-       }else if(e.target.classList.contains('btn-women')){
-           men.forEach(product =>{
-               product.classList.add('display');
-           })
-           kids.forEach(product =>{
-               product.classList.add('display');
-           })
-       }else if(e.target.classList.contains('btn-kids')){
-           women.forEach(product =>{
-               product.classList.add('display');
-           })
-           men.forEach(product =>{
-               product.classList.add('display');
-           })
-       
-   }
+           product.classList.add('display');
+       });
+
+       document.getElementById('loading').style.display = 'block';
+       setTimeout(() => {
+        all.forEach(product =>{
+            product.classList.remove('display');
+        })
+
+        if(e.target.classList.contains('btn-men')){
+            women.forEach(product =>{
+                product.classList.add('display');
+            })
+            kids.forEach(product =>{
+                product.classList.add('display');
+            })
+        }else if(e.target.classList.contains('btn-women')){
+            men.forEach(product =>{
+                product.classList.add('display');
+            })
+            kids.forEach(product =>{
+                product.classList.add('display');
+            })
+        }else if(e.target.classList.contains('btn-kids')){
+            women.forEach(product =>{
+                product.classList.add('display');
+            })
+            men.forEach(product =>{
+                product.classList.add('display');
+            })
+        
+    }
+    document.getElementById('loading').style.display = 'none';
+       }, 2000);
+      
  }
 
 
