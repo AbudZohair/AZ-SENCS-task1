@@ -1,5 +1,5 @@
 # AZ-SENCS-task1
-The whole code is written in Pure State without using any library or framwork
+The whole code is written in Pure State without using any library or framework
 # Note 
-the proj is not Responsive at all 
-# if you want it responsice Just Contact Me
+the proj is build in Single Page with multible Sections and it isn't Responsive at all 
+# if you want it responsive Just Contact Me
