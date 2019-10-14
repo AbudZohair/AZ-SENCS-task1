@@ -112,3 +112,20 @@ navLinks.addEventListener('click', sortProducts)
        
    }
  }
+
+
+// Go up Button
+const goUp = document.querySelector('.go-up');
+window.addEventListener('scroll', ()=>{
+    if(window.pageYOffset >= 780){
+        goUp.style.display = 'block';
+    }else{
+        goUp.style.display = 'none';
+    }
+});
+
+
+goUp.addEventListener('click', () =>{
+    window.scrollTo(0,0);
+        
+});
